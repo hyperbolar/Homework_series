@@ -18,3 +18,10 @@ Dooooo homework with c
 
 3. 用1、2、3、4四个数字，能够构成多少无重复数字的三位数？写一个程序，输出所有这样的数。
 
+20181005_data&calculate_homework
+
+1，阅读参考文献：Computational Thinking：why and what。写一篇读后感；
+
+2，请你设计一个递归程序：程序输入为n个硬币，第m个为假币.程序输出寻找假币的过程和称量次数（该作业在国庆节后8号提交）。
+
+(这里只放第二题啦……）
