@@ -49,7 +49,7 @@ int main(void)
  
 int main(void)
 {
-    int a, b, c, d, f, n;
+    int a, b, c, d, n;
     scanf("%d", &n);
  
     int e = 0;
