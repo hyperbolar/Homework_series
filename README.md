@@ -71,5 +71,38 @@ Sample Output
 
 1. 写一个竞猜游戏，用户必须猜一个秘密的数字，在每次猜完后程序会告诉用户他猜的数是太大了还是太小了，直到猜测正确，最后打印出猜测的次数。如果用户连续猜测同一个数字则只算一次。
 
+2. 设备管理。有32个设备，用一个整型数表示占用情况。每个设备有一个id，1-32。写一个程序，初始化时读入设备的当前状态。可以提供下面选项：1. 占用设备x（若此时设备已被占用，输出提示），2. 释放设备x，3. 输出所有设备使用情况（十进制和二进制表示）， 4. 结束。
 
+test 20181017
+
+Problem A. Date
+Description
+Calculate the total number of days from
+the beginning of the year to the given date.
+Input
+Input contains one line with three integers, representing the year, month and day of
+the date, respectively. Output
+The output will be a single integer, representing the number of days to the
+given date in that year. Sample input
+2018 2 1
+Sample output
+32
+
+Problem B. The sum of four squares
+Description
+Counting the number of solutions for
+splitting a given non-negative number into
+the sum of squares of four non-negative
+integers. For example:
+5 is the sum of the square of 0, 0, 1, 2;
+9 is the sum of the square of 0, 1, 2, 2 or 0, 0, 0, 3; (two solutions)
+15 is the sum of the square of 1, 1, 2, 3. Note that (0, 0, 1, 2) and (0, 0, 2, 1) are
+the same solution.
+Input
+Input contains a single integer. Output
+The output will be a single integer, counting the number of solutions for the
+given input. Sample input
+5
+Sample output
+1
 
