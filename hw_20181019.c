@@ -4,14 +4,18 @@
 
 // equality_test_twobits(x1x0, y1y0) -> eq1
 /*
+// x1x0 y1y0
+zero neq0
+test x0 flip neq0
+test y0 flip neq0
+test neq0 exit
+zero eq1
 zero eq0
 flip eq0
-test x0 flip eq0
-test y0 flip eq0
-zero eq1
 test x1 flip eq1
 test y1 flip eq1
 test eq0 flip eq1
+
 
 // add(x1x0, y1y0) -> z2z1z0
 1 zero z0
