@@ -106,6 +106,7 @@ given input. Sample input
 Sample output
 1
 
+hw_20181019.c
 1, 用flip, zero, test，exit四个指令，编写一段指令序列，完成两个两位(bits)整数的相等判断功能。
  
 2, 用flip、zero、test、exit、goto五个操作,编制一段指令代码，完成两个两位bits的数的加法运算：x1x0和y1y0相加，结果存放在z2z1z0中。可以自己使用若干辅助bit位，可以使用你学过的、写过的已有功能。
