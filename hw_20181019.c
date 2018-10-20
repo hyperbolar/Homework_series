@@ -2,7 +2,7 @@
 
 // questions -> see in README.md
 
-// equality_test_twobits(x1x0, y1y0) -> eq1
+// equality_test_twobits(x1x0, y1y0) -> eq1/*
 zero eq0
 flip eq0
 test x0 flip eq0
@@ -29,7 +29,7 @@ test eq0 flip eq1
 14 test x1 goto 16
 15 goto 17
 16 flip z2
-17 exit()
+17 exit()*/
 
 // Find_students_by_id.c
 #include "stu.h"
