@@ -18,3 +18,41 @@ int main(void)
 
 	return 0;
 }
+//quest 1
+
+
+#include <stdio.h>
+
+void Kakutani(int x)
+{
+	int isOdd = x % 2;
+	
+	if (x == 1)
+	{
+		return;
+	}
+	else if (isOdd)
+	{
+		printf(" -> %d", 3 * x + 1);
+		return Kakutani(3 * x + 1);
+	}
+	else {
+		printf(" -> %d", x / 2);
+		return Kakutani(x / 2);
+	}
+}
+
+int main(void)
+{
+	int x;
+	printf("x = ?");
+	scanf_s("%d", &x);
+
+	printf("%d", x);
+	Kakutani(x);
+
+	return 0;
+}
+
+//
+
