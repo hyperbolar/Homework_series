@@ -241,3 +241,43 @@ hw_20181120.c
 3）打印数组指定行的每一个元素
 
 4）求二维数组中英文字符序列长度最长的一行的下标
+
+//test_20181121.c
+A. Automorphic Number
+Description
+Given a number N, the task is to find out all Automorphic numbers that are less than N.
+A number is called Automorphic number if and only if its square ends in the same digits as the
+number itself. For example, 376*376 = 141376 , so 376 is an Automorphic number.
+Input
+The input contains one line with a positive integer N, where 1 < N < 10000.
+Output
+The output is ONE single line, containing all Automorphic numbers that are less than N. These
+numbers should be presented in ascending order and are separated by a single space.
+Sample Input
+6
+Sample Output
+1 5
+B. Chocolate and Wrapper Puzzle
+Description
+Given following three values, the task is to find the total number of maximum chocolates you can
+eat.
+money : Money you have to buy chocolates
+price : Price of a chocolate
+wrap : Number of wrappers to be returned for getting one extra chocolate.
+It may be assumed that all given values are positive integers and greater than 1.
+Input
+The input contains one line, where three integers represent the money, price and wrap, respectively.
+The integers are separated by a space.
+Output
+The output contains one line, where an integer represents the total number of maximum chocolates.
+Sample Input
+15 1 3
+Sample Output
+22
+Hint
+We buy and eat 15 chocolates
+We return 15 wrappers and get 5 more chocolates.
+We return 3 wrappers, get 1 chocolate and eat it
+(keep 2 wrappers). Now we have 3 wrappers. Return
+3 and get 1 more chocolate.
+So total chocolates = 15 + 5 + 1 + 1 = 22
