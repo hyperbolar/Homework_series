@@ -122,3 +122,92 @@ int main(void)
 }
 
 //3
+#include <stdio.h>
+#include <string.h>
+#define MTRX 15
+
+void __init__(char mtrx[MTRX][MTRX])
+{
+	for (int i = 0; i < MTRX; i++)
+	{
+		scanf_s("%s", mtrx[i], MTRX);
+		for (int j = strlen(mtrx[i]); j < MTRX; j++)
+			mtrx[i][j] = '0';
+	}
+}
+
+void print_matrix(char mtrx[MTRX][MTRX])
+{
+	for (int i = 0; i < MTRX; i++)
+	{
+		for (int j = 0; j < MTRX; j++)
+		{
+			printf("%c", mtrx[i][j]);
+		}
+		printf("\n");
+	}
+}
+
+void print_matrix_t(char mtrx[MTRX][MTRX])
+{
+	for (int i = 0; i < MTRX; i++)
+	{
+		for (int j = 0; j < MTRX; j++)
+		{
+			printf("%c", mtrx[j][i]);
+		}
+		printf("\n");
+	}
+}
+
+void print_line(char mtrx[MTRX][MTRX], int line)
+{
+	for (int i = 0; i < MTRX; i++)
+	{
+		printf("%c", mtrx[line][i]);
+	}
+	printf("\n");
+}
+
+int longest_line(char mtrx[MTRX][MTRX])
+{
+	int line = 0;
+	int len = 0;
+	int temp = 0;
+	for (int i = 0; i < MTRX; i++)
+	{
+		int f = 0;
+		while (f < MTRX && mtrx[i][f] != '0')
+		{
+			len++;
+			f++;
+		}
+		if (temp < len) {
+			temp = len;
+			line = i;
+		}
+		len = 0;
+		
+	}
+
+	return line;
+}
+
+int main(void)
+{
+	char str_test[MTRX][MTRX];
+	
+	__init__(str_test);
+	printf("Print every word:\n");
+	print_matrix(str_test);
+	printf("Printf transposed matrix:\n");
+	print_matrix_t(str_test);
+
+	int line_test;
+	printf("Which line do u want to print\n"); scanf_s("%d", &line_test);
+	printf("line %d is printed.\n", line_test);
+	print_line(str_test, line_test);
+	printf("The longest line in the matrix is: line %d", longest_line(str_test));
+
+	return 0;
+}
