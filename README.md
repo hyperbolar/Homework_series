@@ -281,3 +281,17 @@ We return 3 wrappers, get 1 chocolate and eat it
 (keep 2 wrappers). Now we have 3 wrappers. Return
 3 and get 1 more chocolate.
 So total chocolates = 15 + 5 + 1 + 1 = 22
+
+//hw_20181130.c
+定义一个正方形二维数组a[M][M]（比如M=15），其每一个元素为字符类型，将数组的每一个元素初始化为' '空格。控制循环不断接受下列指令，并完成相应功能：
+
+1）'P'指令(print)：以矩阵形式打印数组中的每一个元素（即逐行打印，每一行之后输出换行）
+
+2）'S'指令(set)：从控制台接受整型数i，j，将数组元素a[i][j]的值设置为'X'
+
+3）'M'指令(move)：从控制台接受'w' 's' 'a' 'd'四个字符之一，表示将当前X的位置向上、下、左、右方向移动一位。
+
+为上述程序设计合适的控制台提示信息帮助使用者完成操作；
+
+完善上述程序的功能或者添加新的功能。
+
